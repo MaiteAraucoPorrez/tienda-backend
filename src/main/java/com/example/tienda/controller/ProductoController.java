@@ -61,4 +61,14 @@ public class ProductoController {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
         }
     }
+
+    @GetMapping("/buscar")
+    public ResponseEntity<?> buscarPorNombre(@RequestParam String nombre) {
+        List<Producto> resultados = productoService.buscarPorNombre(nombre);
+        if (resultados.isEmpty()) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND)
+                .body("No se encontraron productos con el nombre: " + nombre);
+        }
+        return ResponseEntity.ok(resultados);
+    }
 }
