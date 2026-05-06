@@ -1,0 +1,9 @@
+com\example\tienda\service\ProductoService.class
+com\example\tienda\repository\VentaRepository.class
+com\example\tienda\TiendaApplication.class
+com\example\tienda\repository\ProductoRepository.class
+com\example\tienda\controller\ProductoController.class
+com\example\tienda\model\Producto.class
+com\example\tienda\model\Venta.class
+com\example\tienda\controller\VentaController.class
+com\example\tienda\service\VentaService.class
